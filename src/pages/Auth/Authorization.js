@@ -11,7 +11,7 @@ const Authorization = () => {
 
   const handleLogin = () => {
     axios
-      .post("http://localhost:8000/api/login", {
+      .post("https://cs65705.tw1.ru/api/login", {
         email,
         password,
       })

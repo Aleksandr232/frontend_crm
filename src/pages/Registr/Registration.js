@@ -11,7 +11,7 @@ const Registration = () => {
   const handleLogin = () => {
     
     axios
-      .post("http://localhost:8000/api/register", {
+      .post("https://cs65705.tw1.ru/api/register", {
         email,
         password,
         name,
