@@ -72,7 +72,7 @@ const ClientsWorksTable=()=>{
         formData.append('name_service', name_service);
         formData.append('address_service', address_service);
     
-        axios.post(`https://cs65705.tw1.ru/clients/info/${selectedClientInfo}`, formData, {
+        axios.post(`https://cs65705.tw1.ru/api/clients/info/${selectedClientInfo}`, formData, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
