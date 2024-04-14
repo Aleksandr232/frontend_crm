@@ -53,7 +53,7 @@ const Settings=()=>{
         /* const avatar = userData?.avatar;
         const is_admin = userData?.is_admin; */
     
-        axios.post(`http://localhost:8000/api/user/settings/${id}`, formData, {
+        axios.post(`https://cs65705.tw1.ru/api/user/settings/${id}`, formData, {
         headers: {
             Authorization: `Bearer ${token}`,
         }
@@ -74,7 +74,7 @@ const Settings=()=>{
           navigate("/"); // если токен отсутствует, перенаправляем на страницу авторизации
         } else {
           axios
-            .get("http://localhost:8000/api/user", {
+            .get("https://cs65705.tw1.ru/api/user", {
               headers: {
                 Authorization: `Bearer ${token}` // Исправлено передача токена в заголовке запроса
               }

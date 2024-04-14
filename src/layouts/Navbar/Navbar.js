@@ -34,11 +34,11 @@ const Navbar = ({name, avatar, title, path, showPluse, is_admin}) => {
   };
 
   const openModal = () => {
-    if (window.location.href === "http://localhost:3000/work") {
+    if (window.location.href === "https://frontend-crm-zeta.vercel.app/work") {
       setShowModal(true);
-    }else if(window.location.href === "http://localhost:3000/calendar"){
+    }else if(window.location.href === "https://frontend-crm-zeta.vercel.app/calendar"){
       setShowModalCalendar(true);
-    }else if(window.location.href === "http://localhost:3000/clients"){
+    }else if(window.location.href === "https://frontend-crm-zeta.vercel.app/clients"){
       setShowModalClients(true);
     }
   };
@@ -50,7 +50,7 @@ const Navbar = ({name, avatar, title, path, showPluse, is_admin}) => {
   const handleLogout = async () => {
     const token = localStorage.getItem("token");
     try {
-      const response = await axios.post('http://localhost:8000/api/logout', null, {
+      const response = await axios.post('https://cs65705.tw1.ru/api/logout', null, {
         headers: {
           Authorization: `Bearer ${token}` // Исправлено передача токена в заголовке запроса
         }

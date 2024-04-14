@@ -23,7 +23,7 @@ const CalendarPostWork = () => {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    const url = 'http://localhost:8000/api/calendar/work';
+    const url = 'https://cs65705.tw1.ru/api/calendar/work';
   
     axios.get(url, {
       headers: {

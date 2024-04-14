@@ -21,7 +21,7 @@ const ClientsWorks = ({ onClose }) => {
     
 
 
-    axios.post("http://localhost:8000/api/clients", formData, {
+    axios.post("https://cs65705.tw1.ru/api/clients", formData, {
     headers: {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'multipart/form-data'

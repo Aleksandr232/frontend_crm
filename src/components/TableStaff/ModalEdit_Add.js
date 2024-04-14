@@ -45,7 +45,7 @@ const AddStaffForm = ({ onClose }) => {
     formData.append('file', file);
 
 
-    axios.post("http://localhost:8000/api/staff", formData, {
+    axios.post("https://cs65705.tw1.ru/api/staff", formData, {
     headers: {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'multipart/form-data'

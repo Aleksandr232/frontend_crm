@@ -11,7 +11,7 @@ const token = localStorage.getItem("token");
 
   useEffect(() => {
     
-    axios.get('http://localhost:8000/api/staff/all',{
+    axios.get('https://cs65705.tw1.ru/api/staff/all',{
         headers: {
             Authorization: `Bearer ${token}` // Исправлено передача токена в заголовке запроса
           }
@@ -40,7 +40,7 @@ const token = localStorage.getItem("token");
   const delClick = (event, staffMember) => {
     event.preventDefault();
     if (window.confirm("Вы уверены, что хотите удалить этого сотрудника?")) {
-      axios.delete(`http://localhost:8000/api/staff/${staffMember.id}`, {
+      axios.delete(`https://cs65705.tw1.ru/api/staff/${staffMember.id}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         }

@@ -18,7 +18,7 @@ const CalendarForm=({ onClose })=>{
         formData.append('end_work', end);
         formData.append('people_count', count);
     
-        axios.post("http://localhost:8000/api/calendar", formData, {
+        axios.post("https://cs65705.tw1.ru/api/calendar", formData, {
         headers: {
             Authorization: `Bearer ${token}`,
         }

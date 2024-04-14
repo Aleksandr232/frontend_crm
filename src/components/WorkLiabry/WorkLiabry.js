@@ -16,7 +16,7 @@ const WorkLibrary = () => {
   });
 
   const fetchData = _.debounce(() => {
-    axios.get('http://localhost:8000/api/work/all', {
+    axios.get('https://cs65705.tw1.ru/api/work/all', {
         headers: {
             Authorization: `Bearer ${token}`
         }
@@ -33,7 +33,7 @@ const delClick = (event, work) => {
   const token = localStorage.getItem("token");
   event.preventDefault();
 
-    axios.delete(`http://localhost:8000/api/work/${work.id}`, {
+    axios.delete(`https://cs65705.tw1.ru/api/work/${work.id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       }
@@ -68,7 +68,7 @@ useEffect(() => {
         <p>Доходы: {work.income} руб</p>
       </div>
       <div className="flex justify-center">
-        <img src={`http://localhost:8000/work/${work.path}`} alt="Изображение работы" className="w-32 h-32 rounded-lg mb-4" />
+        <img src={`https://cs65705.tw1.ru/work/${work.path}`} alt="Изображение работы" className="w-32 h-32 rounded-lg mb-4" />
       </div>
     </div>
    ))}

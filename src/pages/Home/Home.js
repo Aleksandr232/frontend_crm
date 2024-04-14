@@ -14,7 +14,7 @@ const Home = () => {
       navigate("/"); // если токен отсутствует, перенаправляем на страницу авторизации
     } else {
       axios
-        .get("http://localhost:8000/api/user", {
+        .get("https://cs65705.tw1.ru/api/user", {
           headers: {
             Authorization: `Bearer ${token}` // Исправлено передача токена в заголовке запроса
           }

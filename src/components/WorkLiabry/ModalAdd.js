@@ -26,7 +26,7 @@ const ModalAdd=({ onClose })=>{
         
     
     
-        axios.post("http://localhost:8000/api/work", formData, {
+        axios.post("https://cs65705.tw1.ru/api/work", formData, {
         headers: {
             Authorization: `Bearer ${token}`,
             'Content-Type': 'multipart/form-data'

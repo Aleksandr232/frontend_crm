@@ -26,7 +26,7 @@ const CalendarPost = () => {
     const token = localStorage.getItem("token");
   
     // Определяем URL в зависимости от значения is_admin
-    const url = 'http://localhost:8000/api/calendar/all';
+    const url = 'https://cs65705.tw1.ru/api/calendar/all';
   
     axios.get(url, {
       headers: {
