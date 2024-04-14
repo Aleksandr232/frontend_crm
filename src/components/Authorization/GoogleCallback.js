@@ -9,7 +9,7 @@ function GoogleCallback() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/api/auth/callback${location.search}`, {
+                const response = await fetch(`https://cs65705.tw1.ru/api/auth/callback${location.search}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'

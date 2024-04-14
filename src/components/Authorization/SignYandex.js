@@ -5,7 +5,7 @@ function SignYandex() {
     const [loginUrl, setLoginUrl] = useState(null);
 
 useEffect(() => {
-    fetch('http://localhost:8000/api/redirect-to-yandex-auth', {
+    fetch('https://cs65705.tw1.ru/api/redirect-to-yandex-auth', {
         headers : {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
