@@ -79,7 +79,7 @@ const CalendarPostWork = () => {
     const id = selectedEventId;
   
     axios
-      .post(`http://localhost:8000/api/calendar/calendar_work/${id}`, {}, {
+      .post(`https://cs65705.tw1.ru/api/calendar/calendar_work/${id}`, {}, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -99,7 +99,7 @@ const CalendarPostWork = () => {
     const id = selectedEventId;
 
     axios
-      .delete(`http://localhost:8000/api/calendar/calendar_work_delete/${id}`, {
+      .delete(`https://cs65705.tw1.ru/api/calendar/calendar_work_delete/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
